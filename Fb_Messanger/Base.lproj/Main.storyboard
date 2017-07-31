@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fb_Messanger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-PD-fYF">
+                                <rect key="frame" x="32" y="154" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="lqq-ob-XhY"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSn-eq-btp">
+                                <rect key="frame" x="229" y="154" width="96" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="uVB-fg-ZFL"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3D-Vb-ybe">
+                                <rect key="frame" x="129" y="154" width="99" height="30"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f3D-Vb-ybe" firstAttribute="top" secondItem="XSn-eq-btp" secondAttribute="top" id="2QU-1d-tJL"/>
+                            <constraint firstItem="Oe0-PD-fYF" firstAttribute="firstBaseline" secondItem="XSn-eq-btp" secondAttribute="firstBaseline" id="2hF-RE-N6u"/>
+                            <constraint firstItem="f3D-Vb-ybe" firstAttribute="leading" secondItem="Oe0-PD-fYF" secondAttribute="trailing" constant="24" id="4HE-Uh-1wq"/>
+                            <constraint firstItem="XSn-eq-btp" firstAttribute="leading" secondItem="f3D-Vb-ybe" secondAttribute="trailing" constant="1" id="ALi-RW-NKV"/>
+                            <constraint firstItem="Oe0-PD-fYF" firstAttribute="baseline" secondItem="f3D-Vb-ybe" secondAttribute="baseline" id="ChL-hO-jK1"/>
+                            <constraint firstItem="f3D-Vb-ybe" firstAttribute="baseline" secondItem="XSn-eq-btp" secondAttribute="baseline" id="Dji-mi-E6S"/>
+                            <constraint firstItem="Oe0-PD-fYF" firstAttribute="baseline" secondItem="XSn-eq-btp" secondAttribute="baseline" id="GII-6n-gAO"/>
+                            <constraint firstItem="f3D-Vb-ybe" firstAttribute="firstBaseline" secondItem="XSn-eq-btp" secondAttribute="firstBaseline" id="Hcy-aC-ull"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XSn-eq-btp" secondAttribute="trailing" constant="34" id="O8F-q5-gR2"/>
+                            <constraint firstItem="Oe0-PD-fYF" firstAttribute="firstBaseline" secondItem="f3D-Vb-ybe" secondAttribute="firstBaseline" id="Q3d-ex-sJE"/>
+                            <constraint firstItem="Oe0-PD-fYF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="ay9-UF-FaJ"/>
+                            <constraint firstItem="Oe0-PD-fYF" firstAttribute="top" secondItem="f3D-Vb-ybe" secondAttribute="top" id="jdc-5v-6gl"/>
+                            <constraint firstItem="Oe0-PD-fYF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="134" id="kAe-bE-R5P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="USER1" destination="Oe0-PD-fYF" id="shA-0W-ygi"/>
+                        <outlet property="USER2" destination="f3D-Vb-ybe" id="Dt0-kk-wVo"/>
+                        <outlet property="USER3" destination="XSn-eq-btp" id="mmv-mF-3Na"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
